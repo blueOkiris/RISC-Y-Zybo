@@ -23,6 +23,11 @@ build-base-zynq-project :
 	cd fpga-zynq/zybo; make project
 	cd fpga-zynq/rocket-chip; git apply ../../patches/rocket-java-version.patch
 	cd fpga-zynq; git apply ../patches/common-java-version.patch
+	cd fpga-zynq; git apply ../patches/gitignore-remember-project.patch
+	cd fpga-zynq; git add .gitignore; git add zybo/zybo_rocketchip_ZynqMediumFPGAConfig
+	cd fpga-zynq; git commit -m "Remember me" 
+	cd fpga-zynq; git apply ../patches/upgrade-project.patch
+	
 	
 .PHONY : clean
 clean :
