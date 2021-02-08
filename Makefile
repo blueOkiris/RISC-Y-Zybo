@@ -31,5 +31,4 @@ build-base-zynq-project :
 
 .PHONY : clean
 clean :
-	cd fpga-zynq/rocket-chip; git reset --HARD master
-	cd fpga-zynq; git reset --HARD master
+	git submodule deinit fpga-zynq
