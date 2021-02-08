@@ -17,8 +17,9 @@ install-deps :
 .PHONY : build-base-zynq-project
 build-base-zynq-project :
 	export TERM=xterm-color
-	git submodules update --init
-	cd fpga-zynq; git submodules update --init
+	git submodule update --init
+	cd fpga-zynq; git reset --hard origin/master
+	cd fpga-zynq; git submodule update --init
 	cd fpga-zynq/rocket-chip; git submodule update --init
 	cd fpga-zynq/zybo; make project
 	cd fpga-zynq/rocket-chip; git apply ../../patches/rocket-java-version.patch
@@ -31,4 +32,4 @@ build-base-zynq-project :
 
 .PHONY : clean
 clean :
-	git submodule deinit fpga-zynq
+	git submodule deinit -f fpga-zynq
