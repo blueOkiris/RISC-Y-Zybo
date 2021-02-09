@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;zybo_rocketchip_ZynqMediumFPGAConfig.sdk&apos;" deleteContents="false" description="Delete resource &apos;zybo_rocketchip_ZynqMediumFPGAConfig.sdk&apos;" element1="/zybo_rocketchip_ZynqMediumFPGAConfig.sdk" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1612903261311"/>
+</session>

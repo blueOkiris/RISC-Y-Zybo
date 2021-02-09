@@ -8,7 +8,7 @@ Putting a RISC-V core on a Digilent Zybo
 
  - Vivado must be in $PATH
  
- - Requires Vivado 2016.2 to build the initial project, though the project is then upgraded to 2018.3. Both versions are required to build
+ - Requires Vivado 2016.2 to build the initial project
  
 ## Re-Building
 
@@ -24,9 +24,9 @@ __Re-Building sd-card/BOOT.bin__
 
 1. Run `make build-base-zynq-project XILINX_PATH=<xilinx install path>`. For instance, I do `make build-base-zynq-project XILINX_PATH=~/Xilinx`, but your install may be different.
 
-2. This will build the initial project. From here, you can open Vivado 2018.3, and generate the bitstream.
+2. This will build the initial project and generate a bitstream.
 
-3. Export the hardware and open up SDK
+3. From here, you can open Vivado 2016.2, export the hardware and open up sdk
 
 4. In SDK, create an FSBL project based on the hardware.
 
