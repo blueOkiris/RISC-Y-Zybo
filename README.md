@@ -8,13 +8,13 @@ Putting a RISC-V core on a Digilent Zybo
 
  - Vivado must be in $PATH
  
- - Requires Vivado 2016.2 to build the initial project, though the project is then upgraded to 2018.3. Before running make, make sure to source the Vivado SDK 2016.2 settings64.sh
+ - Requires Vivado 2016.2 to build the initial project, though the project is then upgraded to 2018.3. Both versions are required to build
  
 ## Re-Building
 
 __Re-Building sd-card/BOOT.bin__
 
-1. Run `make init`. To add SDK 2016.2 to the path first, I did `source ~/Xilinx/SDK/2016.2/settings64.sh; make init`, but your install may be different.
+1. Run `make init XILINX_PATH=<xilinx install path>`. For instance, I do `make init XILIX_PATH=~/Xilinx`, but your install may be different.
 
 2. This will build the initial project. From here, you can open Vivado 2018.3, and generate the bitstream.
 
