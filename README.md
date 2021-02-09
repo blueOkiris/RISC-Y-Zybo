@@ -12,9 +12,17 @@ Putting a RISC-V core on a Digilent Zybo
  
 ## Re-Building
 
+To Rebuild everything, run `make XILINX_PATH=<xilinx install path>`
+
+__Re-Building sd-card/devicetree.dtb, sd-card/uImage, and sd-card/uramdisk.image.gz__
+
+1. Run `make build-arm-linux XILINX_PATH=<xilinx install path>`. For instance, I do `make build-arm-linux XILINX_PATH=~/Xilinx`, but your install may be different.
+
+2. Copy files from ./fpga-zynq/zybo/deliver_output/ to sd-card
+
 __Re-Building sd-card/BOOT.bin__
 
-1. Run `make init XILINX_PATH=<xilinx install path>`. For instance, I do `make init XILIX_PATH=~/Xilinx`, but your install may be different.
+1. Run `make build-base-zynq-project XILINX_PATH=<xilinx install path>`. For instance, I do `make build-base-zynq-project XILINX_PATH=~/Xilinx`, but your install may be different.
 
 2. This will build the initial project. From here, you can open Vivado 2018.3, and generate the bitstream.
 
