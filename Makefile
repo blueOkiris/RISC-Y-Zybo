@@ -16,8 +16,9 @@ install-deps :
 init : sub-mod-init build-base-zynq-project build-arm-linux riscv-linux
 
 .PHONY : sub-mod-init
-sub-mod-init : fpga-zynq-submodule riscv-tools-submodule
+sub-mod-init : fpga-zynq-submodule
 	
+# Does nothing
 .PHONY : riscv-tools-submodule
 riscv-tools-submodule :
 	cd riscv-tools; git submodule update --init --recursive
