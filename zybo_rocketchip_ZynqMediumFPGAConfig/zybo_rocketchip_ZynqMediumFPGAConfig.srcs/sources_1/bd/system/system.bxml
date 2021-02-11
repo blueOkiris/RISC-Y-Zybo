@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root MajorVersion="0" MinorVersion="33">
+<Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1612901404"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1612901404"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1612901404"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1613013258"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1613013258"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1613013258"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1613013258"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/system_axi_interconnect_0_0/system_axi_interconnect_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_0"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -14,6 +16,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/system_axi_interconnect_1_0/system_axi_interconnect_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_1"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -52,11 +55,15 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="hdl/system.v" Type="Verilog">
+      <File Name="synth/system.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim/system.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="system_ooc.xdc" Type="XDC">
@@ -76,10 +83,15 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
       </File>
-      <File Name="hdl/system.hwdef">
+      <File Name="synth/system.hwdef">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim/system.protoinst">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
       </File>
     </FileCollection>
   </CompositeFile>
