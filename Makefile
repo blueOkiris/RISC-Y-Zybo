@@ -25,8 +25,6 @@ sub-mod-init :
 # And then again, the submodule's submodule's submodules
 .PHONY : build-base-zynq-project
 build-base-zynq-project :
-	$(shell source $(XILINX_PATH)/SDK/2016.2/settings64.sh)
-	export TERM=xterm-color
 	cd fpga-zynq/rocket-chip; git apply ../../patches/rocket-java-version.patch
 	cd fpga-zynq; git apply ../patches/common-java-version.patch
 	cd fpga-zynq/zybo; make project
@@ -36,6 +34,7 @@ build-base-zynq-project :
 # Build the stuff to run linux on the ARM chip
 .PHONY : build-arm-linux
 build-arm-linux :
+	cd fpga-zynq/common/linux-xilinx; git apply ../../../patches/yyloc-fix.patch
 	cd fpga-zynq/zybo; make arm-linux
 	cd fpga-zynq/zybo; make arm-dtb
 	cd fpga-zynq/zybo; make fetch-ramdisk

@@ -10,3 +10,5 @@
 00:53:06 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/BOOT.bin -w on
 00:53:06 INFO  : Overwriting existing bif file /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/output.bif
 00:53:08 INFO  : Bootgen command execution is done.
+13:36:20 INFO  : Launching XSCT server: xsct -n -interactive /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/temp_xsdb_launch_script.tcl
+13:39:20 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.

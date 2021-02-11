@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# 
+# Start of session at: Thu Feb 11 00:55:55 2021
+# Process ID: 513363
+# Current directory: /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/webtalk/webtalk.log
+# Journal file: /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

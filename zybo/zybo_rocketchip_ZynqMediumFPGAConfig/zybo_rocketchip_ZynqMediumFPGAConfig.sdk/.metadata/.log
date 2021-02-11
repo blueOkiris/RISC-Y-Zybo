@@ -11399,3 +11399,85 @@ java.lang.NullPointerException
 
 !ENTRY com.xilinx.sdk.utils 1 0 2021-02-11 00:53:06.310
 !MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-02-11 00:55:53.295
+!MESSAGE Executed Webtalk command
+!SESSION 2021-02-11 13:36:01.010 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk
+
+!ENTRY org.eclipse.ui 2 0 2021-02-11 13:36:07.132
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-02-11 13:36:07.132
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2021-02-11 13:36:10.416
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-02-11 13:36:10.416
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.osgi 2 0 2021-02-11 13:36:29.214
+!MESSAGE While loading class "org.eclipse.tcf.core.TransientPeer", thread "Thread[Output Stream Monitor,1,main]" timed out waiting (5036ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.tcf.core_1.4.0.201812070702 [308]". To avoid deadlock, thread "Thread[Output Stream Monitor,1,main]" is proceeding but "org.eclipse.tcf.core.TransientPeer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.4.0.201812070702"; osgi.identity="org.eclipse.tcf.core"; singleton:="true" [id=308] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.createXsdbPeer(XSDBCommandManager.java:159)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.checkAndAssignXsdbPort(XSDBCommandManager.java:624)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$12(XSDBCommandManager.java:618)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$10.streamAppended(XSDBCommandManager.java:593)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$ContentNotifier.run(OutputStreamMonitor.java:267)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$ContentNotifier.notifyAppend(OutputStreamMonitor.java:277)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.fireStreamAppended(OutputStreamMonitor.java:118)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:159)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:137)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:212)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	... 24 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.createXsdbPeer(XSDBCommandManager.java:159)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.checkAndAssignXsdbPort(XSDBCommandManager.java:624)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$12(XSDBCommandManager.java:618)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$10.streamAppended(XSDBCommandManager.java:593)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$ContentNotifier.run(OutputStreamMonitor.java:267)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$ContentNotifier.notifyAppend(OutputStreamMonitor.java:277)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.fireStreamAppended(OutputStreamMonitor.java:118)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:159)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:137)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:212)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-02-11 13:39:20.701
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: main
