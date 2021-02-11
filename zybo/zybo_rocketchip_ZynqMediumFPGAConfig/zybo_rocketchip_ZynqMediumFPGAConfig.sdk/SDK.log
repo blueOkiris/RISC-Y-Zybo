@@ -7,3 +7,6 @@
 00:43:10 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/BOOT.bin
 00:43:10 INFO  : Creating new bif file /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/output.bif
 00:43:13 INFO  : Bootgen command execution is done.
+00:53:06 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/BOOT.bin -w on
+00:53:06 INFO  : Overwriting existing bif file /home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/output.bif
+00:53:08 INFO  : Bootgen command execution is done.
