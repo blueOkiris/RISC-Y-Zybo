@@ -12,7 +12,7 @@ Putting a RISC-V core on a Digilent Zybo
  
 ## Re-Building
 
-To Rebuild everything, run `make XILINX_PATH=<xilinx install path>`
+To Rebuild everything, run `export TERM=xterm-color; make XILINX_PATH=<xilinx install path>`
 
 __Re-Building sd-card/devicetree.dtb, sd-card/uImage, and sd-card/uramdisk.image.gz__
 
