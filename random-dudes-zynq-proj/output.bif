@@ -1,7 +1,0 @@
-//arch = zynq; split = false; format = BIN
-the_ROM_image:
-{
-	[bootloader]/home/dylan/Downloads/zynq-fpga/hw/zybo_bsd/zybo_bsd.sdk/FSBL/Debug/FSBL.elf
-	/home/dylan/Downloads/zynq-fpga/hw/zybo_bsd/zybo_bsd.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
-	/home/dylan/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/soft_build/u-boot.elf
-}
