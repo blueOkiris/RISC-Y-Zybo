@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ip/system_proc_sys_reset_0_0/sim/system_proc_sys_reset_0_0.vhd" \
+
+nosort

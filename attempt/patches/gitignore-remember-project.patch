@@ -1,0 +1,12 @@
+diff --git a/.gitignore b/.gitignore
+index 00feb3c..e9d2000 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -19,7 +19,6 @@ zedboard/src/verilog/plusarg_reader.v
+ zedboard/deliver_output
+ zedboard/soft_build
+ 
+-zybo/zybo_rocketchip_*
+ zybo/src/tcl/zybo_rocketchip_*.tcl
+ zybo/src/tcl/make_bitstream_*.tcl
+ zybo/src/verilog/rocketchip_wrapper.v
