@@ -15,7 +15,8 @@ else
     cd fpga-zynq/zybo
     echo "Make sure to set -java-home <java 8 path> in /etc/sbt/sbtopts!"
     export TERM=xterm-color
-    TERM=xterm-colormake project
+    TERM=xterm-color
+    make project
     if [$? -eq 0 ]; then
         echo "Success!"
     else
