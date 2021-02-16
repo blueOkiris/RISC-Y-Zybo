@@ -13,6 +13,12 @@ else
     
     echo "Building project..."
     cd fpga-zynq/zybo
+<<<<<<< Updated upstream
+    echo "Make sure to set -java-home <java 8 path> in /etc/sbt/sbtopts!"
+    export TERM=xterm-color
+    TERM=xterm-color
+=======
+>>>>>>> Stashed changes
     make project
     if [$? -eq 0 ]; then
         echo "Success!"
