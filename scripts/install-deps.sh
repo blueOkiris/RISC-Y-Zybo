@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install vivado depenencies
+sudo apt-get install lib32ncurses5 lib32stdc++6 lib32z1
+
 # Install sbt
 echo "Installing sbt..."
 sudo apt install -y curlx
