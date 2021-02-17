@@ -1,7 +1,0 @@
-//arch = zynq; split = false; format = BIN
-the_ROM_image:
-{
-	[bootloader]/home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/FSBL/Debug/FSBL.elf
-	/home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/zybo_rocketchip_ZynqMediumFPGAConfig/zybo_rocketchip_ZynqMediumFPGAConfig.sdk/rocketchip_wrapper_hw_platform_0/rocketchip_wrapper.bit
-	/home/dylan/MEGA/Documents/School/2020-21/ECE/530/RISC-Y-Zybo/zybo/soft_build/u-boot.elf
-}
