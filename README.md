@@ -8,6 +8,10 @@ This repo contains materials to run Linux on a RISCV core on a Zynq-based FPGA d
 
 The base sd-card files that can run Linux can be downloaded from the RISCV page, and they've been placed in the riscv-dwn-page-sd-card folder.
 
+## Virtual Machine
+
+The virtual machine which was used to build the project can be found [here](https://mega.nz/file/ARw0yCRK#IoHZa1Hm4pApDjTfKeqSL4m_esVwCtVuP9POiEDQrrM).
+
 ## Building
 
 1. Run `./scripts/install-deps.sh`
