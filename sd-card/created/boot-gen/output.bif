@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]/home/dev/Desktop/RISC-Y-Zybo/sd-card/created/boot-gen/FSBL.elf
+	/home/dev/Desktop/RISC-Y-Zybo/sd-card/created/boot-gen/rocketchip_wrapper.bit
+	/home/dev/Desktop/RISC-Y-Zybo/sd-card/created/boot-gen/u-boot.elf
+}
